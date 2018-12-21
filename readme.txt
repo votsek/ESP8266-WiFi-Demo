@@ -7,3 +7,5 @@ This Arduino WiFi server sketch has been tested using a SparkFun Blackboard Ardu
 The tricky part for me was reading the request string from the ESP8266. The readData function accomplishes this, prints the result, and shows how parameters are passed to the server. This is the type of request that is handled: "http://192.168.1.101?opt=2". The result of readData can be parsed to decode the parameters, control the server functions, and return corresponding results. This sketch returns the text "Hello, Pi".
 
 A Raspberry Pi was used as the client with the Requests library used to send the requests to the Arduino server.
+
+To make this work the WiFi SSID and password need to be edited to match your network.
